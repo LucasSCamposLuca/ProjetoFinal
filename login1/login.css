@@ -35,14 +35,14 @@ nav a{
 
 main{
     width: 100%;
-    height: 760px;
+    height: 700px;
     display: flex;
     margin: 20px;
 }
 
 #Fundo{
     background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,0.3663409442724458) 0%, rgba(0,0,0,0.35705301857585137) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,0.3663409442724458) 0%, rgba(0,0,0,0.35705301857585137) 100%);
 }
 
 #box{
@@ -56,15 +56,20 @@ background: linear-gradient(90deg, rgba(0,0,0,0.3663409442724458) 0%, rgba(0,0,0
 }
 
 #DentroDaBox{
-    height: 500px;
+    height: auto;
     padding: 20px;
     border-radius: 20px;
+    font-size: 25px;
 }
 
 #DentroDaBox h2{
     margin: 5px ;
     padding: 20px;
     text-align: center;
+}
+
+#DentroDaBox P{
+    margin: 20px;
 }
 
 #Email{
@@ -93,6 +98,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.3663409442724458) 0%, rgba(0,0,0
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%);
     text-align: right;
+    font-size: 18px;
 }
 
 #p{
