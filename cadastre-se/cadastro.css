@@ -9,7 +9,7 @@
 }
 
 #pagina{
-    color: rgb(0, 101, 194);
+    color: rgb(0, 131, 254);
     font-family: Halo;
     font-size: 20px;
 }
@@ -48,7 +48,7 @@ main{
 
 #box{
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,0.4063409442724458) 0%, rgba(0,0,0,0.40705301857585137) 100%);
     width: 70%;
     height: 500px;
     border-radius: 10px;
