@@ -10,7 +10,7 @@
 
 #pagina{
     font-family: 'Halo';
-    color: rgb(0, 131, 254);
+    color: rgb(102, 180, 253);
     height: auto;
 }
 
@@ -108,9 +108,34 @@ main{
     font-size: 19px;
 }
 
-#logar:focus{
-    width: 50px;
-    border: solid red;
+#logar{
+    text-align: center;
+}
+
+#logar h3{
+    display: inline-block;
+    position: relative;
+    cursor: default;
+}
+
+#logar h3::before{
+    content: "";
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(4, 85, 246, 0.3) 0%, rgba(4, 85, 246, 0.3) 100%);
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
+    border-radius: 20px;
+    margin: -5px;
+}
+
+#logar h3:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 footer{
