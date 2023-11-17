@@ -1,4 +1,35 @@
+@font-face{
+    font-family: Halo;
+    src: url(../fonts/Halo.ttf);
+}
+
+
 /* Section2 */
+
+
+/* Tabala de novidades novidades */
+#tabela{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#boxNovidades{
+    height: 500px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.botaoTabela{
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
 #CaixaNovidades{
     width: 80%;
     background: rgb(0,0,0);
@@ -6,18 +37,15 @@
     border-radius: 80px;
     margin: 0 auto;
 }
+/* ----------------------------------- */
 
-section .imagemç{
+.imagemç{
     width: 100%;
     height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+    text-align: center;
 }
 
 #image1{
