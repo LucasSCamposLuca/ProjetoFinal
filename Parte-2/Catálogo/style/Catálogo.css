@@ -1,0 +1,30 @@
+#botao{
+    text-align: center;
+}
+
+#botao h5{
+    display: inline-block;
+    position: relative;
+    cursor: default;
+    margin: -5px;
+}
+
+#botao h5::before{
+    content: "";
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(4, 85, 246, 0.3) 0%, rgba(4, 85, 246, 0.3) 100%);
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
+    border-radius: 20px;
+    margin: -5px;
+}
+
+#botao h5:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
