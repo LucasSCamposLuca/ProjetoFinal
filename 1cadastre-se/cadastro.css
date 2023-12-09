@@ -34,6 +34,10 @@ header{
     font-size: 40px;
 }
 
+nav{
+    margin-bottom: 20px;
+}
+
 nav a{
     color: white;
     text-decoration: none;
