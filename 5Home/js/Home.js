@@ -6,11 +6,36 @@ dropdowns.forEach(dropdown => {
     const menu = dropdown.querySelector(`.menu`);
     const options = dropdown.querySelectorAll(`.menu li`);
     const selected = dropdown.querySelector(`.selected`);
+
+    select.addEventListener(`click`, () => {
+        select.classList.toggle(`select-clicked`);
+        caret.classList.toggle(`caret-rotate`);
+        menu.classList.toggle(`menu-open`);
+    });
+    
+    options.forEach(option => {
+      option.addEventListener(`click`, () => {
+        selected.innerText = option.innerText;
+    
+        select.classList.remove(`select-clicked`);
+        caret.classList.remove(`caret-rotate`);
+        menu.classList.remove(`menu-open`);
+    
+        options.forEach(option => {
+            option.classList.remove(`active`);
+        });
+    
+        option.classList.add(`active`);
+        });
+    });
 });
 
-select.addEventListener(`click`, () => {
-    select.classList.toggle(`select-clicked`);
-    caret.classList.toggle(`caret-rotate`);
-    menu.classList.toggle(`menu-open`);
-    
-});
+var tabela = $(".tabela");
+
+// tabela.on(`mouseover`, function (){
+//     tabela.animate({with: "100%", height: "100%", borderRadius: "100%"});
+// });
+
+//  tabela.on(`mouseleave`, function (){
+//      tabela.animate({with: "20rem", height: "auto", borderRadius: "20px"});
+// });

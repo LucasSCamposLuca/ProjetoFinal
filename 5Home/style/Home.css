@@ -128,6 +128,7 @@
     padding: 1em;
     cursor: pointer;
     transition: background 0.3s;
+    width: 740px;
 }
 
 .select-clicked{
@@ -160,11 +161,11 @@
     box-shadow: 0 0.5em 1em rgba(0,0,0, 0.2);
     border-radius: 0.5em;
     color: #9fa5b5;
-    position: absolute;
+    position: block;
     top: 3em;
     left: 50%;
     width: 100%;
-    transform: translate(-50%);
+    transform: translate(0%);
     opacity: 0;
     display: none;
     transition: 0.2s;
@@ -189,4 +190,15 @@
 .menu-open {
     display: block;
     opacity: 1;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width : 990px) {
+    .select{
+       width: 90%;
+    }
 }
