@@ -108,6 +108,7 @@ main{
     background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%);
     text-align: right;
     font-size: 20px;
+    margin-bottom: 40px;
 }
 
 #p{
@@ -123,7 +124,7 @@ main{
 #logar h3{
     display: inline-block;
     position: relative;
-    cursor: default;
+    cursor: default; 
 }
 
 #logar h3::before{

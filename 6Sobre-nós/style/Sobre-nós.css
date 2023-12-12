@@ -48,7 +48,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.2863270308123249) 0%, rgba(0,0,0
     padding: 1em;
     cursor: pointer;
     transition: background 0.3s;
-    width: 740px;
+    width: 750px;
 }
 
 .select-clicked{
