@@ -31,7 +31,7 @@ body{
 header{
     text-align: center;
     font-weight: 400;
-    margin: 20px;
+    padding-top: 20px;
     font-size: 40px;
     margin-bottom: 200px;
 }
@@ -149,6 +149,7 @@ form p{
 footer{
     width: 100%;
     text-align: center;
-    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
