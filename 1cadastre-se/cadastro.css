@@ -14,10 +14,10 @@
     font-size: 20px;
 }
 
-#fundo{
+ #fundo{
     background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,0.29735644257703087) 0%, rgba(0,0,0,0.30015756302521013) 100%);
-}
+background: linear-gradient(90deg, rgba(0,0,0,0.19735644257703087) 0%, rgba(0,0,0,0.015756302521013) 100%);
+} 
 
 body{
     background-image: url(Img/master-chief-halo-infinite-game-4k-wallpaper-uhdpaper.com-739@1@e.jpg);
@@ -34,15 +34,35 @@ header{
     padding-top: 20px;
     font-size: 40px;
     margin-bottom: 200px;
+
 }
 
 nav{
+    text-align: center;
+    margin-top: 15px;
     margin-bottom: 20px;
 }
 
 nav a{
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    padding: 0px 50px 10px 0;
+    position: relative;
+}
+
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.2s ease-in-out;
+}
+
+nav a:hover::after{
+    width: 100%;
 }
 
 main{
@@ -77,6 +97,10 @@ main{
 
 form h1{
     text-align: center;
+    margin-bottom: 40px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: white;
 }
 
 form p{
@@ -85,65 +109,89 @@ form p{
     font-size: 20px;
 }
 
+label{
+    font-size: 30px;
+}
+
 #email{
     width: 91%;
     padding: 10px;
     margin: 10px;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.2063409442724458) 0%, rgba(0,0,0,0.20705301857585137) 100%);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
     color: white;
-    border: none;
-    border-radius: 20px;
+    border: solid rgb(24, 114, 156) 3px;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 #senha{
     width: 91%;
     padding: 10px;
     margin: 10px;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.2063409442724458) 0%, rgba(0,0,0,0.20705301857585137) 100%);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
     color: white;
-    border: none;
-    border-radius: 20px;
+    border: solid rgb(24, 114, 156) 3px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 #Nav{
-    text-align: right;
-    font-size: 20px;
+    text-align: center;
+    font-size: 41px;
     color: rgb(255, 255, 255);
     padding: 10px;
     margin: 10px;
 }
 
+.conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: solid rgb(0, 52, 77) 2px;
+}
 
 #Cadastre-se{
     text-align: center;
 }
 
-#Cadastre-se h3{
+#Cadastre-se button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
     display: inline-block;
     position: relative;
     cursor: default;
-}
-
-#Cadastre-se h3::before{
-    content: "";
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(4, 85, 246, 0.3) 0%, rgba(4, 85, 246, 0.3) 100%);
-    display: block;
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    transition: transform 300ms ease;
-    transform-origin: right;
-    transform: scaleX(0);
     border-radius: 20px;
-    margin: -5px;
+    padding: 5px;
+    font-family: Halo;
+    color: rgb(0, 102, 255);
+    background-color: transparent;
+    border: none;
 }
 
-#Cadastre-se h3:hover::before{
-    transform: scaleX(1);
-    transform-origin: left;
+#Cadastre-se button::before{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 102, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.2s ease-in-out;
+}
+
+#Cadastre-se button:hover::before{
+    width: 100%;
 }
 
 footer{
